@@ -10,7 +10,11 @@ Available at https://marketplace.visualstudio.com/items?itemName=StarkProgrammer
 
 ## Express.js
 
-- `nexpress` - Generate Boilerplate for Node.js Express
+- `nexpress` - Generate Boilerplate for Node.js Express ('require' syntax)
+- `_nexpress` - Express.js boilerplate (with 'import' syntax)
+- `exget` - Get request
+- `expost` - Post request
+- `exl` - Listening Event (Startup)
 
 ## FastAPI
 

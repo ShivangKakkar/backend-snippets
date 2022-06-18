@@ -1,7 +1,26 @@
 {
-  "Node.js Express": {
+  "Node.js Express (require)": {
     "prefix": "nexpress",
-    "description": "Node.js Express",
+    "description": "Node.js Express (with require syntax)",
+    "body": [
+      "const express = require('express')",
+      "",
+      "const app = express()",
+      "",
+      "app.get('/', (req, res) => {",
+      "  res.send('hello world')",
+      "})",
+      "",
+      "const port = process.env.PORT || 5000",
+      "",
+      "app.listen(port, () => {",
+      "  console.log(`listening on port ${port}`)",
+      "})"
+    ]
+  },
+  "Node.js Express (import)": {
+    "prefix": "_nexpress",
+    "description": "Node.js Express Boilerplate (with import syntax)",
     "body": [
       "import express from 'express'",
       "",
@@ -17,5 +36,32 @@
       "  console.log(`listening on port ${port}`)",
       "})"
     ]
+  },
+  "Express Get": {
+    "prefix": "exget",
+    "description": "Express Get",
+    "body": [
+      "app.get('/', (req, res) => {",
+      "  res.send('hello world')",
+      "})"
+    ]
+  },
+  "Express Post": {
+    "prefix": "expost",
+    "description": "Express Post",
+    "body": [
+      "app.get('/path', (req, res) => {",
+      "  res.json({ message: 'Hello World' })",
+      "})"
+     ]
+  },
+  "Express Listening Event": {
+    "prefix": "exl",
+    "description": "Express Listening Event",
+    "body": [
+      "app.on('listening', () {",
+      "  // server ready to accept connections here",
+      "});"
+  ]
   }
 }

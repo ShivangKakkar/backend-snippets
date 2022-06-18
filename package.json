@@ -2,7 +2,7 @@
     "name": "backend-snippets",
     "displayName": "Express.js FastAPI Backend Snippets",
     "description": "Basic code snippets for Express.js and FastAPI",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "StarkProgrammer",
     "repository": {
         "type": "git",
