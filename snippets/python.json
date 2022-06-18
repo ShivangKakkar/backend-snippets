@@ -1,0 +1,107 @@
+{
+  "FastAPI": {
+    "prefix": "pyfastapi",
+    "description": "Generate FastAPI Boilerplate",
+    "body": [
+      "from fastapi import FastAPI",
+      "",
+      "app = FastAPI()",
+      "",
+      "",
+      "@app.get(\"/\")",
+      "async def main():",
+      "    return \"Hello World\"",
+      "",
+      "",
+      "if __name__ == \"__main__\":",
+      "    import uvicorn",
+      "    uvicorn.run(app, host=\"localhost\", port=5000)",
+      ""
+    ]
+  },
+  "FastAPI Get": {
+    "prefix": "fa-get",
+    "description": "FastAPI Get",
+    "body": [
+      "@app.get(\"/path\")",
+      "async def main():",
+      "    return \"Hello World\""
+    ]
+  },
+  "FastAPI Post": {
+    "prefix": "fa-post",
+    "description": "FastAPI Post",
+    "body": [
+      "@app.post(\"/path\")",
+      "async def path():",
+      "    return {\"message\": \"Hello World\"}"
+    ]
+  },
+  "FastAPI Startup Event": {
+    "prefix": "fasu",
+    "description": "FastAPI Startup Event",
+    "body": [
+      "@app.on_event(\"startup\")",
+      "async def startup_event():",
+      "    pass"
+         ]
+  },
+  "FastAPI Shutdown Event": {
+    "prefix": "fasd",
+    "description": "FastAPI Shutdown Event",
+    "body": [
+      "@app.on_event(\"shutdown\")",
+      "async def shutdown_event():",
+      "    pass"
+    ]
+  },
+  "FastAPI Jinja Templates": {
+    "prefix": "fajinja",
+    "description": "FastAPI Jinja Templates Directory",
+    "body": [
+      "from fastapi.templating import Jinja2Templates",
+      "",
+      "templates = Jinja2Templates(directory=\"templates\")"
+    ]
+  },
+  "FastAPI Static Files": {
+    "prefix": "fastatic",
+    "description": "FastAPI Mount Static Files",
+    "body": [
+      "from fastapi.staticfiles import StaticFiles",
+      "",
+      "app.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")"
+    ]
+  },
+  "FastAPI File Response": {
+    "prefix": "fafr",
+    "description": "FastAPI return File Reponse",
+    "body": [
+      "from fastapi.responses import FileResponse",
+      "return FileResponse(path=\"static/name.png\")"
+    ]
+  },
+  "FastAPI File Response without Import": {
+    "prefix": "_fafr",
+    "description": "FastAPI return File Reponse without importing class",
+    "body": [
+      "return FileResponse(path=\"static/name.png\")"
+    ]
+  },
+  "FastAPI Favicon": {
+    "prefix": "fafi",
+    "description": "FastAPI set favicon.ico",
+    "body": [
+      "from fastapi.responses import FileResponse",
+      "from fastapi.staticfiles import StaticFiles",
+      "",
+      "app.mount(\"/static\", StaticFiles(directory=\"static\"), name=\"static\")",
+      "",
+      "",
+      "@app.get(\"/favicon.ico\")",
+      "async def favicon():",
+      "    return FileResponse(path=\"static/favicon.ico\")",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "backend-snippets",
+    "displayName": "Express.js FastAPI Backend Snippets",
+    "description": "Basic code snippets for Express.js and FastAPI",
+    "version": "0.0.3",
+    "publisher": "StarkProgrammer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StarkBotsIndustries/backend-snippets"
+    },
+    "icon": "images/icon.jpg",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Snippets",
+        "Programming Languages",
+        "Education"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python.json"
+            }
+        ]
+    }
+}

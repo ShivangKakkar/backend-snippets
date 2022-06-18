@@ -1,0 +1,9 @@
+node_modules
+*.vsix
+.vscode/
+.gitattributes
+quickstart.md
+.vscodeignore
+CHANGELOG.md
+scripts/
+images/
